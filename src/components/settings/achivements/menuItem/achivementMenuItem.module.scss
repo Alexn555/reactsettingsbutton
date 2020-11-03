@@ -1,0 +1,53 @@
+@import '../../../../styles/variables';
+
+$description: #717175;
+
+.container {
+  padding: $padding-main;
+  cursor: ponter;
+  border-bottom: 1px solid rgba(113, 113, 117, 0.1);
+
+  p {
+    width: 80%;
+  }
+}
+
+.containerLabel {
+  border-bottom: none;
+}
+
+.labelDesc {
+  width: 100% !important;
+}
+
+%title {
+  span {
+    font-weight: $font-weight-bold;
+  }
+}
+
+.label {
+  display: inline-block;
+  padding-right: 4px;
+
+  i {
+    top: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.name {
+  @extend %title;
+  display: inline-block;
+
+  p {
+    color: $description;
+  }
+}
+
+.nameComplete {
+  @extend %title;
+  span {
+    color: $active;
+  }
+}

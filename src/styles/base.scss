@@ -1,0 +1,43 @@
+@import "variables";
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/lato.regular.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  background: $bodyBackground;
+  color: $text-primary;
+  font-family: 'Lato' !important;
+  font-size: $font-main-size;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+:focus {
+  outline: none;
+}
+
+a {
+  color: $text-primary;
+  text-decoration: none;
+
+  &:hover {
+    color: $text-primary;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-semibold;
+  font-family: $font-family-titles;
+}
+
+main {
+  padding-top: $offset-top;
+}

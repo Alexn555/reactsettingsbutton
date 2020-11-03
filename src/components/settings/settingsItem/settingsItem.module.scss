@@ -1,0 +1,30 @@
+@import '../../../styles/variables';
+
+$endItem: #D33649;
+
+.settingsItem {
+  padding-left: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  cursor: pointer;
+
+  span {
+    padding-left: 6px;
+  }
+}
+
+.endDiv {
+  padding-bottom: 10px;
+}
+
+%endEl {
+  color: $endItem;
+}
+
+.iconEndElement {
+  @extend %endEl;
+}
+
+.endElement {
+  @extend %endEl;
+}

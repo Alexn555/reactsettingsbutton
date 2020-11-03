@@ -1,0 +1,47 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/common/menu';
+
+$activeRgb: rgba(55, 164, 71, 0.1);
+$activeDarker: rgba(55, 164, 71, 0.2);
+
+%textDesc {
+  padding: $padding-main 6px;
+}
+
+.companyDescription {
+  @extend %textDesc;
+}
+
+.company {
+  position: relative;
+  @extend .commonMenuItem;
+
+  div:nth-child(odd) { // name
+    font-weight: $font-weight-bold;
+  }
+
+  div:nth-child(even) {
+    font-weight: $font-weight-regular;
+  }
+}
+
+.active {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+
+  i {
+    color: $active;
+  }
+}
+
+.activeCompany {
+  background: $activeRgb;
+
+  :hover {
+    background: $activeDarker;
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../../styles/variables';
+
+.menu {
+  cursor: pointer;
+  padding: $padding-main;
+
+  span {
+    font-weight: $font-weight-bold;
+  }
+}
+
+.commonHr {
+  color: $hover-main;
+  opacity: 0.5;
+}
+
+.additional {
+  margin-top: 10px;
+}
+
+.addEmployees {
+  padding-left: $padding-main;
+  font-weight: $font-weight-bold;
+}

@@ -1,0 +1,14 @@
+@import '../../../styles/variables';
+
+$title-size: 14px;
+
+.companies {
+  padding-top: 4px;
+  border-bottom: 1px solid $borderHrMain;
+}
+
+.companyTitle {
+  padding-left: $padding-main;
+  font-size: $title-size;
+  text-transform: uppercase;
+}

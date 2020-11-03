@@ -1,0 +1,10 @@
+@import '../variables';
+
+.commonMenuItem {
+  padding: 2px 8px;
+
+  &:hover, &:focus {
+    background: $hover-main;
+    cursor: pointer;
+  }
+}
